@@ -1,0 +1,173 @@
+<script src="js/contact.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<div>
+  <div class="header-cnt">
+    <div class="container">
+      <h2>CONTACT</h2>
+    </div>
+  </div>
+ <!-- <div class="brd-crm">
+    <div class="container">
+      <h5><a href="#home">HOME</a> / Contact</h5>
+    </div>
+  </div>-->
+</div>
+<div id="banner-sec"> <img src="images/contact-us.jpg"/>
+  <div class="container wow fadeInDown animated">
+    <div class="img-cnt col-lg-5 col-md-6 col-sm-6 col-xs-6 bg" style="background-color: rgba(0, 0, 0, 0.54); padding: 0px 15px 15px 15px;-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;">
+      <h1 class="">Contact</h1>
+      <p>Contacts is your online address book, integrated with Gmail, Calendar, Drive, and other Google products. Sync your contacts to all your devices </p>
+    </div>
+  </div>
+</div>
+<div class="bg-grey"> 
+  <div class="container wow fadeInDown animated">
+    <div class="center">
+      <h2>Online Business, the perfect way to stay top in the market</h2>
+      <p class="lead">The user experience design of a product essentially lies between the intentions of the <br>
+        product and the characteristics of your user</p>
+    </div>
+  </div> 
+  <!--/.container--> 
+</div>
+<div id="features" style="padding:60px 0px 0px 0px !important;">
+  <div class="container-fluid">
+    <div class="cnt-section">
+      <div class="row contact-wrap">
+        <div class="status alert alert-success" style="display: none"></div>
+       <div class="container">
+          <div class="col-md-7 col-sm-12 contact-content wow fadeInLeft animated center-block">
+        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+            <h3>Request For Information :</h3>
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="name" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="lname" class="form-control">
+            </div>
+         
+            <div class="form-group">
+              <label>Email ID *</label>
+              <input type="email" name="email" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <label>Phone *</label>
+             <input type="text"  onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));"  name="number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Subject *</label>
+              <input type="text" name="subject" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Description *</label>
+              <textarea name="message" id="message" required class="form-control" rows="8"></textarea>
+            </div>
+            <div id="imgparent"> <span id="imgdiv"> <img id="img" src="captcha.php"> </span> <img id="reload" src="images/reload.png"> </div>
+            <div>Enter Image Text:</div>
+            <div>
+              <input id="captcha1" name="captcha" type="text"  style="width:100%;">
+            </div>
+            <div class="form-group pull-right lft">
+              <button type="submit" name="submit" id="send_now" class="btn btn-primary btn-md" required="required">Send</button>
+            </div>
+          </form>
+        </div>
+        </div>
+
+        <div class=" map-content padlft contact-content wow fadeInRight animated">
+
+                
+          <div class="row email-info">
+           <h3 style="text-align:center;">Global Presence :</h3>
+            <p class="lead" style="text-align:center;">We value your suggestions and enquiries. Please feel free to contact us at</p>
+            <h4 class="text" style="text-align:center;"><a href="mailto:info@dewsoftware.com">info@dewsoftware.com</a></h4>
+          </div>      
+          <div class="address-bg"> 
+           <div class="container" style="padding-right:0px !important;">
+          <ul class="row address-map">
+            <li class="col-lg-2 col-md-6 col-sm-6 col-xs-12 adr-cnt-hgt">
+             <h5>Head Quarters</h5>  
+              <address>
+             <h4><i class="fa fa-map-marker"></i> USA</h4>
+              <p>983 Corporate Way <br>
+                Fremont, CA 94539<br>
+                Fax: 510-743-4106</p>
+              <p><i class="fa fa-mobile"></i>&nbsp; 510-490-9995 <br>
+              Email: <span><a href="mailto:info@dewsoftware.com">info@dewsoftware.com</a></span></p>
+              </address>
+            </li>
+             <li><h5>&nbsp;Indian  Office</h5></li>
+            <li class="col-lg-3 col-md-6 col-sm-6 col-xs-12  adr-cnt-hgt">
+           
+              <address> 
+            <h4><i class="fa fa-map-marker"></i>  MADURAI</h4>
+              <p>36/2, Doak Nagar Main road<br>
+                Madurai<br>
+                Tamil Nadu -625016</p>
+          </address>
+             
+           
+            </li>
+            <li class="col-lg-2 col-md-6 col-sm-6 col-xs-12  adr-cnt-hgt">
+              <address>
+             
+              <h4><i class="fa fa-map-marker"></i> VADODARA</h4>
+              <p>SF-7. Abhilasha Square <br>
+                Abhilasha Char Rasta, New Sama Road <br>
+                Vadodara – 390008</p>
+         </address>
+           
+            </li>
+
+
+
+
+
+  
+            
+                   <li class="col-lg-3 col-md-6 col-sm-6 col-xs-12 adr-cnt-hgt">
+                     
+                 <address>
+           
+              <h4><i class="fa fa-map-marker"></i> Bangalore</h4>
+              <p>Dew Mobility,<br>
+               2nd floor# 343,
+               <br>
+               9th Main,sector -7,<br>
+                HSR Layout ,<br>
+                Bangalore- 560102</p>
+              </address>
+                  </li>
+
+
+  
+                  <li class="col-lg-2 col-md-6 col-sm-6 col-xs-12  adr-cnt-hgt">
+                     
+                 <address>
+           
+              <h4><i class="fa fa-map-marker"></i> CHENNAI</h4> 
+              <p>1, Ananthu Street, <br>
+                Santhome High Road,<br>
+                Santhome, Chennai 600 004</p>
+              </address>
+                  </li>
+                  
+        
+          </ul>
+          
+    <!--      <div id="contact-info" style="margin-left:10px;">
+  <div my-map style="width: 100%; height: 500px"> </div>
+</div>-->
+        </div>
+        </div>
+        </div>
+      </div>
+      <!--/.row--> 
+      
+    </div>
+  </div>
+</div>

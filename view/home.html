@@ -1,0 +1,377 @@
+
+<!--<div class="social-icons header">
+<ul>
+<li style="background-color: rgb(59, 89, 152);text-align: center;"><a href="https://www.facebook.com/dewsoftware" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li style="background-color: rgb(29, 161, 242);text-align: center;"><a href="https://twitter.com/dewsoftware" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li style="background-color:#0077b5;text-align: center;" ><a href="https://www.linkedin.com/company/dew-software-inc/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+</ul>
+
+</div> -->    
+<section id="main-slider" class="no-margin pad0">
+  <carousel interval="5000">
+    <slide ng-repeat="slide in slides" active="slide.active" style="background-image: url('{{slide.bg}}')">
+      <div class="container">
+        <div class="row slide-margin">
+          <div class="col-lg-5 col-sm-8 col-xs-12">
+            <div class="carousel-content">
+              <h1 class="animation animated-item-1" ng-bind-html="slide.h1text | to_trusted" ></h1>
+              <h2 class="animation animated-item-2" ng-bind-html="slide.h2text | to_trusted"></h2>
+              <div class="slider-btn"><a class="btn-slide animation animated-item-3" href="{{slide.readmore}}">{{slide.text}}</a> </div></div>
+          </div>
+        </div>
+      </div>
+    </slide> 
+  </carousel>  
+  
+  
+</section> 
+<section class="bg-grey">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2>Dew Software’s IT Solutions</h2>
+      <p class="lead">Dew Software’s IT services include architecture, implementation, software 
+development, web application development, testing of large-scale enterprise 
+applications, and mobility services.</p>
+    </div>
+  </div>
+  <!--/.container-->  
+</section>
+<!--/#our business-->
+
+<section id="recent-works" class="bg-white">  
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2 class="section-title">Our Services</h2>
+      <p class="lead">When you get right down to it, success is all about value and trust. <br>
+        Value is a product of trust. The trust your clients have in you. </p>
+    </div>
+    <div class="row mrg20p wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+       <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, rewindNav : false, autoPlay: true, items:3}">
+        <div owl-carousel-item="" ng-repeat="service in ::services" class="item ">          
+            <div class="media service-box">
+              <div class="text-center"> <img src="{{service.image}}" alt="logo"> </div>
+              <div class="media-body cnt-hgt">
+                <h5 class="media-heading text-center head-color"  ng-bind-html="service.title | to_trusted"></h5>
+                <p class="text-center mrgtp25" ng-bind-html="service.description | to_trusted"></p>
+              </div>
+              <div class="text-center mrgtp20"> <a class="btn btn-primary btn-xs src-pad" href="{{service.readlink}}">Read More</a> </div>
+            </div>
+         
+        </div>
+      </data-owl-carousel>
+      
+    </div>
+    <!--/.row--> 
+  </div>
+  <!--/.container--> 
+</section>
+<!--/#recent-works-->
+
+<section id="feature" class="bg-grey">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2>How to Make Technology Work for Your Organization?</h2>
+      <p class="lead">“Partnership is the future.” That’s our philosophy, and we’re proud to work with Fortune 500 companies, alongside mid-sized businesses and organizations.</p>
+      <a href="#contact"><button class="btn btn-primary contact">Contact Us</button></a>
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+<!--/#feature-->
+
+<section id="recent-works" class="bg-white">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2 class="section-title">Who We Serve</h2>
+      <p class="lead">We help our clients in the B2B and B2C sectors across various fields, including <br>
+technology, financials, logistics, educational, and other industry sectors. </p>
+    </div>
+    
+    
+      <div class="industries">
+        <div class="row mrg20p wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+      <data-owl-carousel class="owl-carousel2" data-options="{navigation: true, pagination: false, rewindNav : false, autoPlay: true, items:5}">
+        <div owl-carousel-item="" ng-repeat="service in ::industories" class="item ">          
+            <div class="media service-box">
+              <div class="text-center"> <img src="{{service.image}}" alt="logo"> </div>
+              <div class="media-body">
+                <h5 class="media-heading text-center head-color"  ng-bind-html="service.title | to_trusted"></h5>
+                <p class="text-center mrgtp25" ng-bind-html="service.description | to_trusted"></p>
+              </div>
+             <!-- <div class="text-center mrgtp20"> <a class="btn btn-primary btn-xs" href="{{service.readlink}}">Read More</a> </div>-->
+            </div>
+         
+        </div>
+      </data-owl-carousel>
+     
+    </div>
+    
+    </div>
+    
+<!--    <div class="row industries">
+      <ul class="nav nav-pills nav-justified setup-panel ">
+        <li>
+          <div class="log-pt wow fadeInUp"> <img src="images/financial.png" alt="financial"/>
+            <h2>Financial</h2>
+            <p>Our financial data includes a portion of the global financial indicators.</p>
+          </div>
+        </li>
+        <li>
+          <div class="log-pt wow fadeInUp"> <img src="images/hi-tech.png" alt="hi tech"/>
+            <h2>Hi-tech</h2>
+            <p>Products currently considered high tech are often those that incorporate advanced</p>
+          </div>
+        </li>
+        <li>
+          <div class="log-pt wow fadeInUp"> <img src="images/health-care.png" alt="health care"/>
+            <h2>Health Care</h2>
+            <p>Challenging healthcare environment demands an experienced.</p>
+          </div>
+        </li>
+        <li>
+          <div class="log-pt wow fadeInUp"> <img src="images/retail.png" alt="retail"/>
+            <h2>Reatail</h2>
+            <p>Traditional retail on collision course with burgeoning connected consumers</p>
+          </div>
+        </li>
+        <li>
+          <div class="log-pt wow fadeInUp"> <img src="images/space.png" alt="logistics space"/>
+            <h2 style="margin-top: 20px;">Logistics Space</h2>
+            <p>An app-based service that lets users rent their storage space out to strangers</p>
+          </div>
+        </li>
+      </ul>
+    </div>-->
+  </div>
+</section>
+<section id="mobile" class="bg-grey">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2>Enhanced Mobility</h2>
+      <p class="lead">Dew Software provides end-to-end mobility solutions for B2B and B2C clients.<br>
+We enable mobile applications that focus on work productivity, consumer needs, and more.</p>
+      <div class="wow fadeInUp"><img src="images/mobilty.png" alt="mobilty"/> </div>
+      <div class="col-sm-12 mrg20p mob"> <a href="#">
+        <button class="btn  btn-sm read1">ReadMore</button>
+        </a> </div>
+    </div>
+  </div>  
+  <!--/.container--> 
+</section> 
+<!--/#feature-->
+
+<section id="recent-works" class="bg-white">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <h2 class="section-title">Customer Success Stories</h2>
+      <p class="lead">Customer service is also often referred to when describing <br>
+        the culture of the organization </p>
+    </div>
+    
+    
+    
+    <div class="row">
+<!--      <div class="col-sm-12 mrg40p testimonials">
+        <div class="col-sm-3 wow fadeInLeft animated text-center" style="visibility: visible; animation-name: fadeInLeft;"> <img class="img-respons apptivo-logo" src="images/apptivo.png" alt=""> </div>
+        <div class="col-sm-9">
+          <div class="media service-box wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+            <div class="media-body">
+              <p>"Apptivo is a web-based online office suite and enterprise resource
+                planning software consisting of apps-based business solutions. All 
+                applications are distributed as Software as a Service (Saas)." </p>
+            </div>
+          </div>
+          <div class="media service-box wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+            <div class="media-body auth">
+             <strong>Manager</strong>
+            </div>
+          </div>
+        </div>
+      </div> 
+      --> 
+ <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide vertical" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators clients">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->  
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+       
+          <!-- Quote 2 -->
+        
+          
+          
+          
+             
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!-- Quote 3 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                   <div class="col-sm-3 text-center">
+                   <div class="text-center">
+                 <img src="images/aknoou.png" style="padding-left:30px;"/>
+                 <div class="clearfix"></div>
+                  <img src="images/deepesh.jpg" class="prof-sld-img"/>
+           </div>
+                </div>
+                
+                           <div class="col-sm-9">
+          <div class="media service-box">
+            <div class="media-body">
+              <p>"It has been a great experience working with Dew Offshore engineers. We engaged with them early on, and now have a solid team supporting us. Both Dew management and employees are very flexible to work with, and the team is instrumental in the ongoing delivery of our SaaS software platform."</p>
+            </div>
+          </div>
+          <div class="media service-box" >
+            <div class="media-body auth">
+            <span>Deepesh Chourey</span>
+            <br>
+             <strong>Co-Founder Of Akoonu</strong>
+            </div>
+          </div>
+        </div>
+       
+              </div>
+            </blockquote>
+          </div>
+          
+          
+          
+           <div class="item">
+            <blockquote>
+              <div class="row">
+              
+                 <div class="col-sm-3 text-center">
+                 <div class="text-center">
+                       <img src="images/clickability.png">
+                 <div class="clearfix"></div>
+                  <img src="images/sury.PNG" class="prof-sld-img"/>
+           </div>
+           </div>
+              
+              
+                   <div class="col-sm-9">
+          <div class="media service-box">
+            <div class="media-body">
+              <p>"Dew Software has been a great partner for Clickability. The engineering resources and services they provided us have been phenomenal and have complemented the onshore team deliver great features. Dew’s engineering team has been flexible to adjust to the time differences, providing the needed overlap between the onshore and offshore teams thereby improving the overall communications between the team. Dew management has been able to provide us technically sound resources at a very short notice and has been the preferred partner for Clickability."</p>
+            </div>
+          </div>
+          <div class="media service-box" >
+            <div class="media-body auth">
+             <span>Suryakant Naik</span>
+            <br>
+             <strong>Director of Software Development</strong>
+            </div>
+          </div>
+        </div>
+              </div>
+            </blockquote>
+          </div>   
+          
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+   
+
+
+      <div class="col-sm-12  text-center wow fadeInDown animated">
+        <a href="#customers"><button class="btn btn-primary case">Case Studies</button></a>
+      </div>
+      
+    
+      <div class="partners mrg20p col-sm-12 mrgbtm-non">
+      
+      
+      
+      
+      <div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+      <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, rewindNav : false, autoPlay: true, items:3}">
+        <div owl-carousel-item="" ng-repeat="case in ::cases" class="item">
+          <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="{{case.tm}}" src="{{case.image}}"></a>
+        </div>
+      </data-owl-carousel>
+      </div>
+      
+       
+      
+        
+      
+      
+     
+      </div>  
+    </div>   
+    <!--/.row--> 
+  </div> 
+  <!--/.container--> 
+</section>
+<!--/#recent-works--> 
+<script>
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 20000,
+
+  });
+  
+  
+});
+
+
+
+
+
+
+
+
+$("#main-slider").mouseover(function(){
+$("a.left.carousel-control").css("left","80px");	
+$("a.right.carousel-control").css("right","80px");	
+
+});  
+
+
+$( "#main-slider" ).mouseleave(function() {
+	
+$("a.left.carousel-control").css("left","-80px");	
+$("a.right.carousel-control").css("right","-80px");		
+});
+
+</script>
+
+
+
+
+
+
