@@ -18,7 +18,7 @@ $message .= 'Contact Us: ' . $number. '<br/>';
 $message .= 'Subject: ' . $subject. '<br/>';
 $message .= 'Description: ' . $msg;
 
-         $to = "damian@dewsoftware.com";
+         $to = "damian@worldscapeinc.com";
        
 //        $header = "From:$email \r\n";
 //          $header .= "MIME-Version: 1.0\r\n";

@@ -93,7 +93,7 @@
           <h3>Global Presence :</h3>
           <div class="row email-info">
             <p class="lead">We value your suggestions and enquiries. Please feel free to contact us at</p>
-            <h4>info@dewsoftware.com</h4>
+            <h4>info@worldscapeinc.com</h4>
           </div>
           <ul class="row address-map">
             <li class="col-md-6 col-sm-6 col-xs-12">
