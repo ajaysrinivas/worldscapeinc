@@ -1,10 +1,10 @@
 var express = require("express");
-var dotenv  = require('dotenv');
+// var dotenv  = require('dotenv');
 var proxy = require('express-http-proxy');
 var app     = express();
 var path = require("path");
-dotenv.load();
-console.log(process.env.API_PORT);
+// dotenv.load();
+// console.log(process.env.API_PORT);
 
 app.use('/app',express.static(__dirname + '/app'));
 //Store all HTML files in view folder.
@@ -18,13 +18,7 @@ app.get('/',function(req,res){
   //It will find and locate index.html from View or Scripts
 });
 
-app.use('/be', proxy('http://localhost:9000', {
-  forwardPath: function(req, res) {
-    return require('url').parse(req.url).path;
-  }
-}));
-
 
 app.listen(5000);
 
-console.log("Running at Port 5000");
+console.log("WorldScape Inc. running at Port 5000");

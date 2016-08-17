@@ -238,7 +238,7 @@ body > section {
 }
 .top-bar {
 	padding: 8px 0;
-	background: #e2e3e4;
+	background: #f1f1f1;
 }
 .top-number {
 	color: #fff;
@@ -342,7 +342,7 @@ input.search-form {
 	
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-	border-top: 3px solid #3499d1;
+	border-top: 3px solid #aac597;
 	color: #27272e;  
 }
 .navbar-inverse {
@@ -354,7 +354,7 @@ input.search-form {
 	color: #fff;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-	border-top: 3px solid #3499d1;
+	border-top: 3px solid #aac597;
 	color: #000;
 	background: none;
 }
@@ -382,7 +382,7 @@ background-color: #FFFFFF;
 	    border-bottom: 1px solid #E2E3E4;
 }
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a, .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a, .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-color: #3499D1;
+color: #aac597;
 }
 .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
 	border-radius: 0;
@@ -2491,14 +2491,14 @@ p.contact-con {
 	margin: 16px;
 }
 .email-info h4 {
-	color: #3499d1;
+	color: #aac597;
 	font-weight: bold;
 }
 ul.address-map li {
 	list-style: none;
 }
 .row.address-map h4, .address-map address span {
-	color: #3499d1;
+	color: #aac597;
 }
 ul.address-map {
 	margin: 0;
@@ -2535,10 +2535,10 @@ border: 1px solid #D2D0D0;
 #banner-sec p{color:#ffffff;font-size:19px;font-family:'ars_maquette_prolight';}
 .img-cnt{position: absolute;bottom: 195px;padding: 0px;}
 
-.header-cnt{background-color: #3499d1;padding:30px 0px 30px 0px;}
+.header-cnt{background-color: #aac597;padding:30px 0px 30px 0px;}
 .header-cnt h2{color:#ffffff;margin:0px;font-family:'ars_maquette_prolight';} 
 .brd-crm{background-color:#f2f2f2;padding:5px 0px 5px 0px;}
-.brd-crm a{color: #3499D1;}
+.brd-crm a{color: #aac597;}
 .brd-crm a:hover{color: #6c6c6c;}
 .brd-crm h5{color:#6c6c6c;font-family:'ars_maquette_prolight';}
 #cta { padding: 50px 0;background-color: #595e60;margin-top: 1px;}
@@ -2556,15 +2556,15 @@ div#features {padding: 60px 0;}
 .customers-cnt p{font-size:19px;color: #616060;}
 .customers-cnt .profile p{font-size:16px;color: #000;text-align:center;}
 
-.customers-cnt a{font-size:20px;color:#3499d1;}
-.customers-cnt h3{font-size:20px;color:#3499d1;text-align: center;}
+.customers-cnt a{font-size:20px;color:#aac597;}
+.customers-cnt h3{font-size:20px;color:#aac597;text-align: center;}
 
 
 
 p.contact-con {color: #ffffff;text-align: center;font-size: 15px;}
 .contact-content h3 {font-size: 20px;font-weight: bold;color:#000;margin-bottom: 16px;}
 .email-info {margin: 7px;}
-.email-info h4 {color: #3499d1;font-weight: bold;}
+.email-info h4 {color: #aac597;font-weight: bold;}
 ul.address-map li {list-style: none;}
 .row.address-map h4{
     font-size: 16px;
@@ -2594,7 +2594,7 @@ height: 230px;
     width: 20%;
     float: left;
 }
- .address-map address span {color: #3499d1;}
+ .address-map address span {color: #aac597;}
 ul.address-map {margin: 0;}
 
 ul.address-map i{position:static !important;left:0px!important;font-size: 17px !important;}
@@ -2613,7 +2613,7 @@ ul.address-map li {
 .search_jobs input{padding: 10px 60px;width:100%;}
 .job-search{ background-color: #eee; padding: 15px;}
 .job-search-table a {
-    color: #3499D1 !important;
+    color: #aac597 !important;
     background: none !important;
 	
 	
@@ -2648,7 +2648,7 @@ text-align: justify;
 		font-size:17px; 
 }
 .cnt-section a{
-	         color: #3499D1;
+	         color: #aac597;
 		font-size:17px; 
 }
 .cnt-section a:hover{text-decoration:underline;}

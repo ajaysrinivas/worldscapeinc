@@ -336,10 +336,10 @@
 #banner-sec h1{color:#ffffff;font-size:36px;font-family: 'ars_maquette_probold';}
 #banner-sec p{color:#ffffff;font-size:17px;font-family:'ars_maquette_prolight';}
 
-.header-cnt{background-color: #3499d1;padding:30px 0px 30px 0px;}
+.header-cnt{background-color: #558B2F;padding:30px 0px 30px 0px;}
 .header-cnt h2{color:#ffffff;margin:0px;font-family: 'ars_maquette_probold';} 
 .brd-crm{background-color:#f2f2f2;padding:5px 0px 5px 0px;}
-.brd-crm a{color: #3499D1;}
+.brd-crm a{color: #558B2F;}
 .brd-crm a:hover{color: #6c6c6c;}
 .brd-crm h5{color:#6c6c6c;font-family:'ars_maquette_prolight';}
 #cta { padding: 50px 0;background-color: #595e60;margin-top: 1px;}

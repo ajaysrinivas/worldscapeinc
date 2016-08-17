@@ -1,0 +1,7 @@
+.bg-lightBluelightGrayGradient{
+  background: #009CDE; 
+  background: -webkit-linear-gradient(left, #558B2F, #558B2F); 
+  background: -o-linear-gradient(right, #558B2F, #558B2F); 
+  background: -moz-linear-gradient(right, #558B2F, #558B2F);
+  background: linear-gradient(to right, #558B2F, #f1f1f1);
+}
