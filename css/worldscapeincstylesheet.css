@@ -5,3 +5,7 @@
   background: -moz-linear-gradient(right, #558B2F, #558B2F);
   background: linear-gradient(to right, #558B2F, #f1f1f1);
 }
+
+.navbar-brand.title{
+	font-size: calc(0.5vw + 0.5vh + 0.25vmin);
+}
