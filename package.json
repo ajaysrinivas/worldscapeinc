@@ -5,6 +5,7 @@
   "main": "app.routes.js",
   "dependencies": {
     "dotenv": "^2.0.0",
+    "ejs": "^2.5.1",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
     "path": "^0.12.7"
