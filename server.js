@@ -7,6 +7,8 @@ app.engine('html', require('ejs').renderFile)
 // dotenv.load();
 // console.log(process.env.API_PORT);
 
+var port = process.env.PORT || 8080;
+
 app.use('/app',express.static(__dirname + '/app'));
 //Store all HTML files in view folder.
 app.use('/assets',express.static(__dirname + '/assets'));
@@ -20,6 +22,6 @@ app.get('/',function(req,res){
 });
 
 
-app.listen(5000);
-
-console.log("WorldScape Inc. running at Port 5000");
+app.listen(port, function() {
+	console.log('Worldscape Inc. is running on port' + port);
+});
