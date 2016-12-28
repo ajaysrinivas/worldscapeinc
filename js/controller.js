@@ -499,15 +499,15 @@ app.controller('homepagecontroller', ['$scope', '$http', '$location',
 
             {
                 image: 'images/support operation.png',
-                title: 'DevOPs Support <br> and Operations',
-                description: 'Increase your efficiency with DevOPs support that manages your service lifecycle in its entirety.',
+                title: 'ERP <br> Enterprise Resource Planning',
+                description: 'Automate and integrate core business processes in your organization through ERP.',
                 readlink: '#support-operation'
             },
 
             {
                 image: 'images/mobility.png',
-                title: 'Mobility <br> Services',
-                description: 'Expand your UC capabilities and implement responsive design with mobility services for iOS and Android.',
+                title: 'Mainframe <br> Solutions',
+                description: 'Build core applications more productively, deliver key IT services faster, and release new business value.',
                 readlink: '#mobility'
             },
 
