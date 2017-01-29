@@ -30,56 +30,64 @@
     <nav class="navbar navbar-inverse bg-lightBluelightGrayGradient" role="banner">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="#home" ><img src="images/worldscapeinc.png" alt="logo" style="width:80px;height:60px;"></img><span class="title" style="padding-left:10px;padding-top:60px;">WorldScape Inc.</span></a> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#home" >
+            <img src="images/worldscapeinc.png" alt="logo"></img>
+            <span class="title" style="padding-left:10px;padding-top:60px;">WorldScape Inc.</span>
+          </a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/our-services') || isActive('/web-application') || isActive('/support-operation')|| isActive('/mobility')|| isActive('/testing-services')|| isActive('/data-analytics')|| isActive('/app-software-development')|| isActive('/consulting-services')}"> <a href="#our-services">Services</a>
-              <!-- <ul class="dropdown-menu dew">
-                <li class="dropdown"  ng-click="select($index)" ng-class="{active:isActive('/our-services') || isActive('/web-application') || isActive('/seo') || isActive('/digital-marketing')  || isActive('/responsive') || isActive('/e-commerce')}"><a href="#web-application">Web Application <br>
-                Development (UI/UX)</a>
-                  <ul class="dropdown-menu dew sub-menu">
-                    <li ng-click="select($index)" ng-class="{active:isActive('/seo')}"><a href="#seo">SEO</a></li>
-                     <li ng-click="select($index)" ng-class="{active:isActive('/digital-marketing')}"><a href="#digital-marketing">Digital Marketing</a></li>
-                    <li ng-click="select($index)" ng-class="{active:isActive('/responsive')}"><a href="#responsive">Responsive</a></li>
-                    <li ng-click="select($index)" ng-class="{active:isActive('/e-commerce')}"><a href="#e-commerce">E-commerce</a></li>
-                  </ul>
-                </li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/support-operation')}"><a href="#support-operation">DevOPs</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/mobility')}"><a href="#mobility">Mobility</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/testing-services')}"><a href="#testing-services">Testing as Services</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/data-analytics')}"><a href="#data-analytics">Big Data / Analytics</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/app-software-development')}"><a href="#app-software-development">Application /Software <br>
-                Development</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/consulting-services')}"><a href="#consulting-services">Consulting Services</a></li>
-              </ul> -->
+            <!-- <ul class="dropdown-menu dew">
+              <li class="dropdown"  ng-click="select($index)" ng-class="{active:isActive('/our-services') || isActive('/web-application') || isActive('/seo') || isActive('/digital-marketing')  || isActive('/responsive') || isActive('/e-commerce')}"><a href="#web-application">Web Application <br>
+              Development (UI/UX)</a>
+              <ul class="dropdown-menu dew sub-menu">
+                <li ng-click="select($index)" ng-class="{active:isActive('/seo')}"><a href="#seo">SEO</a></li>
+                <li ng-click="select($index)" ng-class="{active:isActive('/digital-marketing')}"><a href="#digital-marketing">Digital Marketing</a></li>
+                <li ng-click="select($index)" ng-class="{active:isActive('/responsive')}"><a href="#responsive">Responsive</a></li>
+                <li ng-click="select($index)" ng-class="{active:isActive('/e-commerce')}"><a href="#e-commerce">E-commerce</a></li>
+              </ul>
             </li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/support-operation')}"><a href="#support-operation">DevOPs</a></li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/mobility')}"><a href="#mobility">Mobility</a></li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/testing-services')}"><a href="#testing-services">Testing as Services</a></li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/data-analytics')}"><a href="#data-analytics">Big Data / Analytics</a></li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/app-software-development')}"><a href="#app-software-development">Application /Software <br>
+            Development</a></li>
+            <li  ng-click="select($index)" ng-class="{active:isActive('/consulting-services')}"><a href="#consulting-services">Consulting Services</a></li>
+          </ul> -->
+        </li>
         <!--             <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/product') || isActive('/iot')}"> <a href="#iot">Product</a>
         <ul class="dropdown-menu dew">
           <li  ng-click="select($index)" ng-class="{active:isActive('/iot')}"><a href="#iot">IoT</a></li>
         </ul>
       </li> -->
-            <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/customers') || isActive('/strategic')}"> <a href="#customers">Customers</a>
-<!--               <ul class="dropdown-menu dew">
-                <li><a href="#">Case Studies</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/customers')}"><a href="#customers">Testimonial</a></li>
-                <li  ng-click="select($index)" ng-class="{active:isActive('/strategic')}"><a href="#strategic">Strategic Alliances</a></li>
-              </ul> -->
-            </li>
-            <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/company') || isActive('/leadership') || isActive('/career') }"> <a href="#company">Company</a>
-              <ul class="dropdown-menu dew">
-                <li ng-click="select($index)" ng-class="{active:isActive('/leadership')}"><a href="#leadership">Leadership</a></li>
-                <li ng-click="select($index)" ng-class="{active:isActive('/career')}"><a href="#career">Careers</a></li>
-                <li ng-click="select($index)" ng-class="{active:isActive('/about')}"><a href="#about">About Us</a></li>
-              </ul>
-            </li>
-            <li ng-click="select($index)" ng-class="{active:isActive('/contact')}"><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
+      <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/customers') || isActive('/strategic')}"> <a  href="#customers">Customers</a>
+      <!--               <ul class="dropdown-menu dew">
+        <li><a href="#">Case Studies</a></li>
+        <li  ng-click="select($index)" ng-class="{active:isActive('/customers')}"><a href="#customers">Testimonial</a></li>
+        <li  ng-click="select($index)" ng-class="{active:isActive('/strategic')}"><a href="#strategic">Strategic Alliances</a></li>
+      </ul> -->
+    </li>
+    <li class="dropdown" ng-click="select($index)" ng-class="{active:isActive('/company') || isActive('/leadership') || isActive('/career') }"> <a href="#company">Company</a>
+    <ul class="dropdown-menu dew">
+      <li ng-click="select($index)" ng-class="{active:isActive('/leadership')}"><a  href="#leadership">Leadership</a></li>
+      <li ng-click="select($index)" ng-class="{active:isActive('/career')}"><a href="#career">Careers</a></li>
+      <li ng-click="select($index)" ng-class="{active:isActive('/about')}"><a  href="#about">About Us</a></li>
+    </ul>
+  </li>
+  <li ng-click="select($index)" ng-class="{active:isActive('/contact')}"><a  href="#contact">Contact Us</a></li>
+</ul>
+</div>
+</div>
 <!--/.container-->
-    </nav>
+</nav>
 <!--/nav-->
 </div>
 </header>

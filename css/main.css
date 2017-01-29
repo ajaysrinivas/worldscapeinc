@@ -78,7 +78,7 @@ body {
 	background: #fff;
 	font-family: 'ars_maquette_prolight';
     color: #000;
-	line-height: 22px;
+	/*line-height: 22px;*/
 	padding-top: 135px;
 	overflow-x: hidden
 }

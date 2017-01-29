@@ -9,3 +9,42 @@
 .navbar-brand.title{
 	font-size: calc(0.5vw + 0.5vh + 0.25vmin);
 }
+
+@media only screen and (max-width: 400px) {
+	.navbar-inverse .navbar-brand{
+		font-size:16px;
+	}
+
+	.navbar-header img{
+		width:40px;
+		height:30px;
+	}
+
+	body {
+		padding-top:80px;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 990px) {
+	.navbar-inverse .navbar-brand{
+		font-size:20px;
+	}
+
+	.navbar-header img{
+		width:60px;
+		height:50px;
+		padding-bottom:10px;
+	}
+
+	body {
+		padding-top:90px;
+	}
+
+}
+
+@media only screen and (min-width: 990px) {
+	.navbar-header img{
+			width: 80px;
+			height: 60px;
+		}
+}
