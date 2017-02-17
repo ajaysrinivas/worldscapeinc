@@ -115,45 +115,51 @@
 </section>
 <!--/#contact-page-->
 <section id="job-search">
-<div class="container">
-  <div class="row job-search">
-    <div class="search_jobs  wow fadeInDown animated">
-      <div class="col-xs-4">
-        <input type="text" name="search_keywords" id="search_keywords" ng-model="search.jobid" placeholder="Keywords" value="">
-      </div>
-      <div class="col-xs-4">
-        <input type="text" name="search_location" id="search_Title" ng-model="search.Title" placeholder="Title" value="">
-      </div>
-      
-      <div class="search_location col-xs-4">
-        <input type="text" name="search_location" id="search_location" ng-model="search.location" placeholder="Location" value="">
+  <div class="container">
+    <div class="row job-search">
+      <div class="search_jobs  wow fadeInDown animated">
+        <div class="col-xs-4">
+          <input type="text" name="search_keywords" id="search_keywords" ng-model="search.jobid" placeholder="Keywords" value="">
+        </div>
+        <div class="col-xs-4">
+          <input type="text" name="search_location" id="search_Title" ng-model="search.Title" placeholder="Title" value="">
+        </div>
+        
+        <div class="search_location col-xs-4">
+          <input type="text" name="search_location" id="search_location" ng-model="search.location" placeholder="Location" value="">
+        </div>
       </div>
     </div>
+    <div class="row job-search-table">
+      <table class="table table-hover  wow fadeInDown animated">
+        <colgroup>
+        <col width="5%"/>
+        <col width="35%"/>
+        <col width="30%"/>
+        <col width="30%"/>
+        </colgroup>
+        <thead>
+          <th></th>
+          <th>Job ID</th>
+          <th>Title</th>
+          <th>Location</th>
+        </thead>
+        <tbody ng-repeat="career in careers | filter:search">
+          <tr ng-click="open = !open">
+            <td><a href="javascript:void(0)"><i ng-class="{'fa fa-lg fa-caret-down': open, 'fa fa-lg fa-caret-right': !open}"></i></a></td>
+            <td><a href="javascript:void(0)"  style="color:#000 !important ;" ng-click="open = !open">{{career.jobid}}</a></td>
+            <td><a href="javascript:void(0)"   style="color:#000 !important;" ng-click="open = !open">{{career.Title}}</a></td>
+            <td><a href="javascript:void(0)"   style="color:#000 !important;" ng-click="open = !open">{{career.location}}</a></td>
+          </tr>
+          <tr ng-show="open">
+            <td colspan="4"> <div ng-bind-html="to_trusted(career.description)"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div class="row job-search-table">
-    <table class="table table-hover  wow fadeInDown animated">
-      <colgroup>
-      <col width="35%"/>
-      <col width="30%"/>
-      <col width="30%"/>
-      </colgroup>
-      <thead>
-        
-        <th>Job ID</th>
-        <th>Title</th>
-        <th>Location</th>
-      </thead>
-      <tbody ng-repeat="career in careers | filter:search">
-        <tr>
-          
-          <td><a href="javascript:void(0)"  style="color:#000 !important ;" ng-click="open = !open">{{career.jobid}}</a></td>
-          <td><a href="javascript:void(0)"   style="color:#000 !important;" ng-click="open = !open">{{career.Title}}</a></td>
-          <td><a href="javascript:void(0)"   style="color:#000 !important;" ng-click="open = !open">{{career.location}}</a></td>
-        </tr>
-        <tr ng-show="open">
-          <td colspan="3"> <div ng-bind-html="to_trusted(career.description)"></div></td>
-        </tr>
-      </tbody>
+</section>
+
       
       <!--   <tr>
         <td><a href="#">IND41002 – Java Architect</a></td>
@@ -181,9 +187,9 @@
         <td><a href="">22/03/2016</a></td>
       </tr>-->
       
-    </tbody>
+    <!-- </tbody>
     
   </table>
 </div>
 </div>
-</section>
+</section> -->
