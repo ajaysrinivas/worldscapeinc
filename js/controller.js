@@ -351,21 +351,20 @@ app.controller('careerController', ['$scope', '$http', '$location', '$sce',
             return $sce.trustAsHtml(html_code);
         }
         console.log('careers');
-        $scope.careers = [
+        $http.get('data/openings.json')
+             .then(function(res){
+                $scope.careers = res.data
+             })
+        // $scope.careers = [
 
+        //     {
+        //         jobid: 'SA',
+        //         location: ' Fremont, CA',
+        //         Title: 'Systems Analyst (multiple openings)',
+        //         description: "<div class='job_description'> <p><strong>Job Title:</strong>Systems Analyst (multiple openings)</p> <p><strong>Job Duties:</strong>Define and analyze computer systems. Specific duties include</p> <ul style='padding-left:17px;'> <li>Install, configure and administer Weblogic 12c/11g, JBoss EAP 5/6/7, Apache 2.2/2.4 in different environments like Development, Stage, ITF, MTF and Production on Linux, Solaris and AIX operating system.</li> <li>Create graphs for different metrics like CPU, Memory, Disk Usage, Swap space, for trending historical data.</li> <li>Perform stop/start Jboss 7.0/6.0 centrally from console by taking advantage of the domain controller.</li> <li>Automate WAR deployment procedure in production environment running on Weblogic and JBoss using UNIX shell script. Provid development team with thread dumps and heap dumps using Jstack and Jhat, JDK tools.</li> <li>Create Virtual Servers, SSL Profiles, Persistence profiles, Pools, Monitors, iRules, ASM Relaxations, DR scripts on BIG IP F5 and Netscalar LoadBalancers.</li> <li>Provide documentation of all the environments that were built during the project. Create integration background including XML/XSLT, Data Transformation, Message Routing, Integration Infrastructure and Web Services (WS*, REST). Resolved production issues within the SLA. Work with Apache Tomcat, Weblogic, SOA, Fusion, Python and Web Services.</li> </ul> <p></p> <p><strong>JOB QUALIFICATIONS:</strong></p> <ul style='padding-left:17px;'> <li>Bachelor’s degree in Computer Science, Engineering or other related fields plus 2 years of experience </li> <li>Foreign degree equivalent is acceptable. Experience to include working with Apache Tomcat, Weblogic, SOA, Fusion, Python and Web Services.</li> </ul> <p></p> <p><strong>HOURS:</strong>40 hours per week; M-F, 9:00 a.m. – 6:00 p.m. </p> <p><strong>JOB LOCATION:</strong>43745 Nansa Court, Fremont, CA 94539. Travel is not required but candidates must be willing to relocate to unanticipated cities across the country per contract demand.</p> <p><strong>CONTACT PERSON:</strong>E-mail resume referencing job code# 317SA to WorldScape Inc. at Jobs@worldscapeinc.com</p> <p><strong>Note:</strong>This position is eligible for the company’s referral incentive program. Please refer to the posted policy for details.</p> </div>"
+        //     },
 
-
-
-
-
-            {
-                jobid: 'SA',
-                location: ' Fremont, CA',
-                Title: 'Systems Analyst (multiple openings)',
-                description: "<div class='job_description'> <p><strong>Job Title:</strong>Systems Analyst (multiple openings)</p> <p><strong>Job Duties:</strong>Define and analyze computer systems. Specific duties include</p> <ul style='padding-left:17px;'> <li>Install, configure and administer Weblogic 12c/11g, JBoss EAP 5/6/7, Apache 2.2/2.4 in different environments like Development, Stage, ITF, MTF and Production on Linux, Solaris and AIX operating system.</li> <li>Create graphs for different metrics like CPU, Memory, Disk Usage, Swap space, for trending historical data.</li> <li>Perform stop/start Jboss 7.0/6.0 centrally from console by taking advantage of the domain controller.</li> <li>Automate WAR deployment procedure in production environment running on Weblogic and JBoss using UNIX shell script. Provid development team with thread dumps and heap dumps using Jstack and Jhat, JDK tools.</li> <li>Create Virtual Servers, SSL Profiles, Persistence profiles, Pools, Monitors, iRules, ASM Relaxations, DR scripts on BIG IP F5 and Netscalar LoadBalancers.</li> <li>Provide documentation of all the environments that were built during the project. Create integration background including XML/XSLT, Data Transformation, Message Routing, Integration Infrastructure and Web Services (WS*, REST). Resolved production issues within the SLA. Work with Apache Tomcat, Weblogic, SOA, Fusion, Python and Web Services.</li> </ul> <p></p> <p><strong>JOB QUALIFICATIONS:</strong></p> <ul style='padding-left:17px;'> <li>Bachelor’s degree in Computer Science, Engineering or other related fields plus 2 years of experience </li> <li>Foreign degree equivalent is acceptable. Experience to include working with Apache Tomcat, Weblogic, SOA, Fusion, Python and Web Services.</li> </ul> <p></p> <p><strong>HOURS:</strong>40 hours per week; M-F, 9:00 a.m. – 6:00 p.m. </p> <p><strong>JOB LOCATION:</strong>43745 Nansa Court, Fremont, CA 94539. Travel is not required but candidates must be willing to relocate to unanticipated cities across the country per contract demand.</p> <p><strong>CONTACT PERSON:</strong>E-mail resume referencing job code# 317SA to WorldScape Inc. at Jobs@worldscapeinc.com</p> <p><strong>Note:</strong>This position is eligible for the company’s referral incentive program. Please refer to the posted policy for details.</p> </div>"
-            },
-
-
+        // ];
 
 
 
@@ -476,7 +475,7 @@ app.controller('careerController', ['$scope', '$http', '$location', '$sce',
 
 
 
-        ];
+        // ];
     }
 ]);
 
