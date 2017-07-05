@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "WorldScape Inc. Website",
   "main": "app.routes.js",
+  "start": "node server.js",
   "dependencies": {
     "dotenv": "^2.0.0",
     "ejs": "^2.5.1",
